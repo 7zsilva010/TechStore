@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitar serviço | TechStore</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="logo">TechStore</div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#servicos">Serviços</a>
+            <a href="index.html#ofertas">Ofertas</a>
+            <a href="index.html#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main class="pagina-produto">
+
+        <div class="produto-card">
+
+            <div class="produto-info">
+
+                <span class="categoria">SOLICITAÇÃO</span>
+
+                <h1>Solicitar serviço</h1>
+
+                <p class="descricao">
+                    Preencha os dados abaixo para enviar sua solicitação.
+                </p>
+
+                <form id="formSolicitacao">
+
+                    <label for="nome">Seu nome</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+
+                    <label for="servico">Serviço desejado</label>
+                    <select id="servico" required>
+                        <option value="">Selecione um serviço</option>
+                        <option>Desenvolvimento de Aplicativo</option>
+                        <option>Site Profissional</option>
+                        <option>Loja Virtual</option>
+                        <option>Sistema Personalizado</option>
+                        <option>Automação</option>
+                        <option>Manutenção</option>
+                    </select>
+
+                    <label for="projeto">Descrição do projeto</label>
+                    <textarea
+                        id="projeto"
+                        rows="6"
+                        placeholder="Explique o que você precisa..."
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="botao-comprar">
+                        💬 Enviar solicitação
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 TechStore — Desenvolvimento de Software</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
